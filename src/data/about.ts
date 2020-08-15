@@ -1,21 +1,21 @@
 export const Qualifications = [
   {
-    institution: 'PhD ',
+    institution: 'PhD',
     date: 'July  2018 -',
     description: 'Computer Science, UWC'
   },
   {
-    institution: 'Msc ',
+    institution: 'MSC',
     date: 'January  2013 - June 2014',
     description: 'Computer Science, UCT'
   },
   {
-    institution: 'BSc Hons',
+    institution: 'BSC Hons',
     date: 'January  2012 - December 2012',
     description: 'Computer Science, UCT'
   },
   {
-    institution: 'BSc',
+    institution: 'BSC',
     date: 'January 2004 -Dec 2007',
     description: 'Computer Science, UCT'
   }
