@@ -83,6 +83,7 @@ const ProfileContentTitle = styled.div`
 
 const ProfileWrapper = styled.div`
   @media (min-width: 600px) {
+    min-width: 324px;
     width: 35%;
     height: 35%;
   }
@@ -152,6 +153,7 @@ const SkillTitleWrapper = styled.div`
   @media (min-width: 600px) {
     align-items: flex-end;
     flex-direction: row;
+    flex-flow: row wrap;
   }
 `
 
@@ -295,7 +297,7 @@ const SecondPage = () => (
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Receipts And Invoices.
+                  Receipts And Invoices
                 </a>
                 .
               </ProfileContentItem>
