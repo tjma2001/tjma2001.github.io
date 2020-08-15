@@ -1,13 +1,17 @@
-import React from "react"
-import styled from "styled-components"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { Card, CardContent, Hidden, IconButton } from "@material-ui/core"
-import { Facebook, LinkedIn, Twitter, GitHub } from "@material-ui/icons"
+import React from 'react'
+import styled from 'styled-components'
+import Layout from '../components/layout'
+import SEO from '../components/seo'
+import { Card, CardContent, Hidden, IconButton } from '@material-ui/core'
+import { Facebook, LinkedIn, Twitter, GitHub } from '@material-ui/icons'
 
-import profile from "../components/profile"
+import profile from '../components/profile'
 
-import { Experience, Qualifications, ResearchPublications } from "../data/about"
+import { Experience, Qualifications, ResearchPublications } from '../data/about'
+
+const About = styled.div`
+  line-height: 1.5;
+`
 
 const BodyContent = styled.div`
   display: flex;
@@ -96,6 +100,7 @@ const PublicationsTitle = styled.span`
 const PublicationsWrapper = styled.div``
 
 const QualificationWrapper = styled.div`
+  align-items: flex-center;
   display: flex;
   flex-direction: column;
 
@@ -108,7 +113,8 @@ const QualificationDate = styled.div`
   font-size: 0.75rem;
 
   @media (min-width: 600px) {
-    padding-left: 0.25rem;
+    padding-left: 0.5rem;
+    padding-bottom: 0.2rem;
   }
 `
 
@@ -122,7 +128,7 @@ const QualificationDescription = styled.div`
 const QualificationInstitution = styled.div`
   font-size: 1.25rem;
   font-weight: 500;
-  width: 3rem;
+  width: 6rem;
 `
 
 const Skill = styled.div`
@@ -192,6 +198,7 @@ const Wrapper = styled.div`
   font-color: black;
   height: 100%;
   justify-content: center;
+  line-height: 1.5;
   margin: 0;
   padding: 0;
 
@@ -209,7 +216,7 @@ const Education = (): JSX.Element => (
             {qualification.institution}
           </QualificationInstitution>
           <MB4 />
-          <Hidden xsDown> - </Hidden>
+          {/* <Hidden xsDown> - </Hidden> */}
           <QualificationDescription>
             {qualification.description}
           </QualificationDescription>
@@ -266,7 +273,7 @@ const WorkExperience = (): JSX.Element => (
 
 const SecondPage = () => (
   <Layout>
-    <SEO title="About" />
+    <SEO title='About' />
     <Wrapper>
       <StyledCard>
         <StyledCardContent>
@@ -278,11 +285,11 @@ const SecondPage = () => (
               <ProfileContentTitle>Taariq Mullins</ProfileContentTitle>
               <MB32 />
               <ProfileContentItem>
-                Founder and GOD of{" "}
+                Founder and GOD of{' '}
                 <a
-                  href="https://figornaartjie.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href='https://figornaartjie.com'
+                  target='_blank'
+                  rel='noopener noreferrer'
                 >
                   figornaartjie
                 </a>
@@ -291,11 +298,11 @@ const SecondPage = () => (
               <MB8 />
 
               <ProfileContentItem>
-                Creator of{" "}
+                Creator of{' '}
                 <a
-                  href="https://receiptsandinvoices.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href='https://receiptsandinvoices.com'
+                  target='_blank'
+                  rel='noopener noreferrer'
                 >
                   Receipts And Invoices
                 </a>
@@ -305,32 +312,32 @@ const SecondPage = () => (
               <ProfileContentItem>
                 <SocialMediaIcons>
                   <IconButton
-                    aria-label="linked-in"
-                    href="https://www.linkedin.com/in/taariq-mullins-902a298/"
-                    target="_blank"
+                    aria-label='linked-in'
+                    href='https://www.linkedin.com/in/taariq-mullins-902a298/'
+                    target='_blank'
                   >
-                    <LinkedIn fontSize="large" />
+                    <LinkedIn fontSize='large' />
                   </IconButton>
                   <IconButton
-                    aria-label="facebook"
-                    href="https://www.facebook.com/tjma2001"
-                    target="_blank"
+                    aria-label='facebook'
+                    href='https://www.facebook.com/tjma2001'
+                    target='_blank'
                   >
-                    <Facebook fontSize="large" />
+                    <Facebook fontSize='large' />
                   </IconButton>
                   <IconButton
-                    aria-label="twitter"
-                    href="https://twitter.com/tjma2001"
-                    target="_blank"
+                    aria-label='twitter'
+                    href='https://twitter.com/tjma2001'
+                    target='_blank'
                   >
-                    <Twitter fontSize="large" />
+                    <Twitter fontSize='large' />
                   </IconButton>
                   <IconButton
-                    aria-label="github"
-                    href="https://github.com/tjma2001"
-                    target="_blank"
+                    aria-label='github'
+                    href='https://github.com/tjma2001'
+                    target='_blank'
                   >
-                    <GitHub fontSize="large" />
+                    <GitHub fontSize='large' />
                   </IconButton>
                 </SocialMediaIcons>
               </ProfileContentItem>
@@ -340,7 +347,7 @@ const SecondPage = () => (
             <MB24 />
             <Title>About</Title>
             <MB16 />
-            <div>
+            <About>
               <p>
                 I have strong skills in project management and the ability to
                 handle the entire lifecycle of a project. This applies to the
@@ -362,7 +369,7 @@ const SecondPage = () => (
                 I am currently slowly working through a Ph.D. in this very area
                 hoping to slowly see the light in my research.
               </p>
-            </div>
+            </About>
             <MB40 />
 
             <Title>Experience</Title>
