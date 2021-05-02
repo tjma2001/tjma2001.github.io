@@ -325,13 +325,13 @@ const SecondPage = () => (
                   >
                     <Facebook fontSize='large' />
                   </IconButton>
-                  <IconButton
+                  {/* <IconButton
                     aria-label='twitter'
                     href='https://twitter.com/tjma2001'
                     target='_blank'
                   >
                     <Twitter fontSize='large' />
-                  </IconButton>
+                  </IconButton> */}
                   <IconButton
                     aria-label='github'
                     href='https://github.com/tjma2001'
