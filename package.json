@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "Taariq's CV",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "My personal and work CV",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Taariq Mullins <tjma2001@gmail.com>",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
