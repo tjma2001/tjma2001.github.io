@@ -308,6 +308,32 @@ const SecondPage = () => (
                 </a>
                 .
               </ProfileContentItem>
+              <MB8 />
+
+              <ProfileContentItem>
+                Co-founder of{' '}
+                <a
+                  href='https://djingr.com'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  Djingr
+                </a>
+                .
+              </ProfileContentItem>
+              <MB8 />
+
+              <ProfileContentItem>
+                Co-founder of{' '}
+                <a
+                  href='https://tradeflow.finance'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  Tradeflow
+                </a>
+                .
+              </ProfileContentItem>
               <MB8SM32 />
               <ProfileContentItem>
                 <SocialMediaIcons>
